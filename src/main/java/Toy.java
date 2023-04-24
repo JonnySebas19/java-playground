@@ -9,6 +9,10 @@ public class Toy implements Action {
     public void play() {
         System.out.println("Robot " + name + " is trying to stand up");
     }
+    @Override
+    public void play(Toy toy){
+        System.out.println("Robot " + name + " is playing with the other toy " + toy);
+    }
 
     @Override
     public String toString() {

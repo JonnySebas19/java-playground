@@ -8,6 +8,7 @@ public class Main {
         Action[] animals = new Action[]{coco, max, rabbit, robot};
         for (Action friend : animals) {
             friend.play();
+            friend.play(robot);
         }
     }
 }
